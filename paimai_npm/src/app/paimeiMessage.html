@@ -1,0 +1,398 @@
+<div class="container">
+    <h1 align="center">愤怒的小鸟</h1>
+    <table width="900" align="center" class="table table-bordered" bgcolor="#cdcdcd" cellspacing="1" cellpadding="4">
+        <tbody>
+            <tr bgcolor="#f6f6f6">
+                <td width="15%" height="30">
+                    <div align="right">当前出价：</div>
+                </td>
+                <td width="50%" height="30">
+                    <font color="#ff6600" size="3"><b>{{price}}
+                        </b></font> 元
+                </td>
+                <td width="12%" height="30">
+                    <div align="right">拍卖状态：</div>
+                </td>
+                <td width="23%" height="30"><b>拍卖中</b> </td>
+            </tr>
+            <tr bgcolor="#f6f6f6">
+                <td width="15%" height="30" align="right">商家名称：</td>
+                <td width="50%" height="30">
+
+                    <a href="/xinge/shop/default.asp?method=home&amp;shop_id=103" target="_blank"><b>北京惠幅国际赛鸽</b></a>
+
+                    (<a href="/xinge/pm/pgw_grade.asp?name=huifu" target="_blank">查看信用度</a>)</td>
+                <td width="15%" height="30" align="right">商家所在地：</td>
+                <td width="23%" height="30">北京&nbsp;北京</td>
+            </tr>
+            <tr bgcolor="#f6f6f6">
+                <td width="15%" height="30" align="right">需保证金：</td>
+                <td width="50%" height="30">￥1000元
+
+                </td>
+                <td width="12%" height="30">
+                    <div align="right">起 拍 价：</div>
+                </td>
+                <td width="23%" height="30">￥500元</td>
+            </tr>
+            <tr bgcolor="#f6f6f6">
+                <td width="15%" height="30">
+                    <div align="right">交易情况：</div>
+                </td>
+                <td width="50%" height="15">688 次浏览，1 次出价 最后出价者：
+                    老山头&nbsp;</td>
+                <td width="12%" height="15" align="right">
+                    <div align="right">联系电话：</div>
+                </td>
+                <td width="23%" height="15">13311290547</td>
+            </tr>
+            <tr bgcolor="#f6f6f6">
+                <td width="15%" height="30">
+                    <div align="right">相关信息：</div>
+                </td>
+                <td class="sarifs">
+
+                    运　费：买家付 ，送　货：汽车托运 <a style="" href="/xinge/pm/pgw_zt.asp?pmsid=51145&amp;shop_id=0"
+                        target="_blank">&gt;&gt;详细</a></td>
+                <td width="12%" height="15" align="right">结拍时间：</td>
+                <td width="23%" height="15">2019-7-21 23:35:37
+                </td>
+            </tr>
+            <tr align="CENTER" bgcolor="#f6f6f6">
+                <td height="30" colspan="2">
+                    <button class="btn btn-warning btn-lg" (click)="sendMsg()">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        我要竞拍
+                    </button>
+                </td>
+                <td height="30" colspan="2">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label>加价幅度：</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input width="12%" class="form-control" type="number" placeholder="1000">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container">
+    <ul class="tab">
+      <li class="active" role="presentation" id="tabli1"><a onclick="pm_dtab(4,1)" href="javascript:void(0)">商品描述</a></li>
+      <li id="tabli2" role="presentation" onclick="pm_dtab(4,2)"><a onclick="pm_dtab(4,2);showprice_more();" href="javascript:void(0)">竞标过程(<span class="red" id="payerNo3">16</span>)</a><a name="cjlist"></a></li>
+      <li id="tabli3" role="presentation"><a onclick="pm_dtab(4,3)" href="javascript:void(0)">交易提醒</a></li>
+      <li id="tabli4" role="presentation"><a onclick="pm_dtab(4,4)" href="javascript:void(0)">关于保证金</a></li>
+    </ul>
+    <div class="content" id="content1" style="display: block;">
+      <ul class="span3">
+        <li><span class="lable">编号：</span><span id="tmp_auc_id">879658</span></li>
+       
+        <li><span class="lable">足环号：</span> </li>
+         <li><span class="lable">性别：</span>不详</li>
+        <li><span class="lable">羽色：</span>
+        </li>
+        <li><span class="lable">眼砂：</span>
+        </li>
+        <li><span class="lable">血统书：</span>未上传
+        </li>
+        <li><span class="lable">开拍：</span>2019-7-20 18:00:00</li>
+        <li style="position:relative"><span class="lable">结拍：</span><span id="CloseDate">2019-7-27 15:21:08
+        
+    </span></li>
+        <li><span class="lable">当前：</span><span id="mydt" style="color:#FF0000;">2019-07-28 08:56:54</span>
+        
+
+<script type="text/javascript">
+<!--
+function time(dt)
+{
+var s='';
+var d=dt!=null?new Date(dt):new Date();
+with(d)
+{
+s=fixNum(getHours())+':'+fixNum(getMinutes())+':'+fixNum(getSeconds())
+}
+return(s);
+}
+function popDate(dt)
+{
+var s=''
+var d=dt!=null?new Date(dt):new Date();
+with(d)
+{
+s=getFullYear()+'-'+fixNum(getMonth()+1)+'-'+fixNum(getDate())
+}
+return(s);
+}
+
+function fixNum(num)
+{
+return num<10?'0'+num:num;
+}
+//-->
+</script>
+<script type="text/javascript">
+var dd=new Date("2019/7/28 8:33:12");
+document.getElementById("mydt").innerHTML="";
+setInterval("dd.setSeconds(dd.getSeconds()+1);document.getElementById('mydt').innerHTML=popDate(dd)+' '+time(dd)",1000)
+</script>
+</li>
+      </ul>
+      <div class="divide"></div>
+      
+      <p id="auc_description"> 福建天宇三关鸽王冠军</p><a name="view"></a>
+      
+      <a href="http://pic8.chinaxinge.com/pgw/pgwupload/shop/big/201907/20190720110231230.jpg"> <img width="850" class="lazy" id="auc_bigpic" style="display: block;" src="http://pic8.chinaxinge.com/pgw/pgwupload/shop/big/201907/20190720110231230.jpg" border="0" data-original="http://pic8.chinaxinge.com/pgw/pgwupload/shop/big/201907/20190720110231230.jpg"></a>
+      
+    </div>
+    
+    <div class="content" id="content2" style="display: none;">
+     
+   <table width="100%" align="center" bgcolor="#cdcdcd" cellspacing="1" cellpadding="3">                           
+  <tbody><tr align="CENTER" bgcolor="#ffffec"> <td width="22%" height="24"><font color="#ff6600">买家</font></td>
+    <td width="17%" bgcolor="#ffffec"><font color="#ff6600">方式</font></td>
+    <td width="20%" bgcolor="#ffffec"><font color="#ff6600">出价</font></td><td width="23%" bgcolor="#ffffec"> 
+  <font color="#ff6600">出价时间</font></td><td width="18%"><font color="#ff6600">状态</font></td></tr> 
+  </tbody><tbody id="pricelist2">
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥500000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:20:39</td><td align="center" class="bline" bgcolor="#ffffff">
+        领先<img width="22" height="18" src="/pgw/skins/default/no1.gif"> 
+  
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥450000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:20:32</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥400000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:20:25</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥350000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:20:17</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥300000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:20:10</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥250000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:20:03</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥200000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:19:50</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥180000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:19:32</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥150000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:19:25</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥120000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:19:14</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥100000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:19:02</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥90000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:19:01</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥80000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:18:49</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥70000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:18:46</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥60000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:18:43</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+
+         <tr> <td height="24" align="center" bgcolor="#ffffff">现场出价
+        <img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">
+        </td>
+        <td align="center" bgcolor="#ffffff">现场</td>
+        <td align="center" class="bline" bgcolor="#ffffff">￥50000元</td><td align="center" bgcolor="#ffffff">2019-7-27 15:18:38</td><td align="center" class="bline" bgcolor="#ffffff">
+        出局
+        </td>
+        </tr>
+       
+</tbody>
+  </table>
+    </div>
+    <div class="content" id="content3" style="display: none;"> 
+    <table style="border-collapse: collapse" border="0" cellspacing="1" cellpadding="2">
+        <tbody> 
+        <tr class="td"> 
+          <td colspan="2"> 
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+            
+              <tbody><tr> 
+                <td width="100%" height="23" align="center" colspan="3"><b>交易提醒</b> 
+                </td>
+              </tr>
+              
+            </tbody></table>
+          </td>
+        </tr>
+        <tr class="td"> 
+          <td width="12" valign="top">·</td>
+          <td><strong>怎样参与拍卖？</strong> 请先访问<a href="http://help.ag188.com" target="_blank"><font color="#ff0000">中信网拍卖帮助中心help.ag188.com</font></a>了解拍卖详细流程，具体操作请先<a href="/pgw/member/login.asp" target="_blank">登录</a>中信网会员区，在拍卖认证资料管理栏目操作。</td>
+        </tr>
+        <tr class="td"> 
+          <td width="12" valign="top">·</td>
+          <td> 
+            <p><strong>参与拍卖需要保证金？ </strong>保证金级别的拍卖需要参与进行拍卖保证金认证，请在中信网会员区拍卖资料管理查看具体说明或查看相关拍卖公告。<a href="http://help.ag188.com/?helphtml/62.html" target="_blank"><font color="#ff0000">&gt;&gt; 
+              中信网拍卖保证金认证管理办法</font></a> </p>
+          </td>
+        </tr>
+        <tr class="td"> 
+          <td width="12" valign="top">·</td>
+          <td height="2"><strong>保证金会员的标志？</strong>保证金会员出价后带个<img width="16" height="16" alt="拍卖认证保证金级会员" src="/pgw/skins/default/bzj.gif">图形。</td>
+        </tr>
+        <tr class="td"> 
+          <td width="12" valign="top">·</td>
+          <td><strong>对卖家不放心？</strong> 参考卖家的展厅资料和信用记录能帮助您作出正确的决定，来看看别的买家对卖家的信用评价。</td>
+        </tr>
+        <tr class="td"> 
+          <td width="12" valign="top">·</td>
+          <td><strong><font color="#ff0000">如何方便竞拍？ </font></strong>请安装中信网即时通讯软件"<b>鸽友通</b>"和卖家网上交流并及时获得拍卖进展信息！<a href="http://gyt.chinaxinge.com/download.asp">下载鸽友通</a></td>
+        </tr>
+        <tr class="td"> 
+          <td width="12" valign="top">&nbsp;</td>
+          <td><strong>商品如何运输？</strong> 查看卖家的有关商品运输的说明，出价前最好先电话咨询卖家运输问题的相关具体细节及其他疑问的问题，了解清楚后再出价。</td>
+        </tr>
+        <tr class="td"> 
+          <td width="12" valign="top">·</td>
+          <td><strong>怎样才算竞价成功？</strong> 到商品截标时，您的出价状态是领先的话，且经过卖家确认后，您竞价就成功了。</td>
+        </tr>
+        <tr class="td"> 
+          <td width="12" valign="top">·</td>
+          <td><strong>出价成功了，然后呢？</strong> 您的会员区会有拍卖订单生成，等待卖家确认订单运费，之后按网站的拍卖流程操作。</td>
+        </tr>
+        <tr class="td"> 
+          <td width="12" valign="top">·</td>
+          <td><strong>如何付款拿货？</strong>-- 付款到会员帐户结算订单，联络卖家发货，收货后上网确认订单，完成拍卖。 
+          </td>
+        </tr>
+        <tr class="td"> 
+          <td valign="top">·</td>
+          <td><strong>结标前出价延时？ </strong>在拍卖截止时间前10分钟内如有人竞拍，则截止时间按此次竞拍的时间自动顺延10分钟，依次类推。拍卖结标到期之后的最高出价为成交价格。</td>
+        </tr>
+        <tr class="td">
+          <td valign="top">·</td>
+          <td><strong><font color="#ff0000">竞拍提示：</font></strong><font color="#ff0000">请随时注意刷新网页，以确认有最新出价出现！</font></td>
+        </tr>
+        </tbody> 
+      </table>
+    </div>
+    <div class="content" id="content4" style="display: none;"> 
+    <table border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr><td><img src="images/pm_bzjlc.jpg" border="0"></td></tr>
+    <tr><td><img src="images/pm_bzjsm.jpg" border="0"></td></tr>
+    </tbody></table>
+   
+   
+    </div>
+                        
+  </div>

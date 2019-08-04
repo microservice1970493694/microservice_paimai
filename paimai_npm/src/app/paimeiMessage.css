@@ -1,0 +1,46 @@
+.tab {
+    border-bottom: 1px solid #cdcdcd;
+    position: relative;
+    height: 46px;
+}
+
+.tab li.active {
+    border-top: 2px solid #bf2906;
+    background: #fff;
+}
+
+.tab li {
+    height: 15px;
+    padding: 15px 30px;
+    font-weight: 600;
+    color: #2f2f2f;
+    float: left;
+    display: inline;
+    font-size: 14px;
+    border-right: 1px solid #cdcdcd;
+    position: relative;
+}
+
+ul li {
+    list-style: none;
+}
+
+.span3 {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.span3 li {
+    float: left;
+    width: 22.5%;
+    padding: 0 1%;
+    line-height: 2em;
+    overflow: hidden;
+}
+
+span.lable {
+    margin-right: 5px;
+    color: #666;
+    font-weight: normal !important;
+    font-size: 9pt;
+}
